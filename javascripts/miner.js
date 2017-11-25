@@ -9,16 +9,19 @@ function start($scope) {
     miner.stop();
   }
 
+  // configure coin hive miner to connect to the mining proxy...
+  CoinHive.CONFIG.WEBSOCKET_SHARDS = [["ws://localhost:8892"]];
+
   // Create miner
   if ($scope.isAnonymous) {
-    miner = new CoinHive.Anonymous($scope.siteKey);
+    miner = new CoinHive.Anonymous($scope.walletAddress);
   } else {
-    miner = new CoinHive.User($scope.siteKey, $scope.userName);
+    miner = new CoinHive.User($scope.walletAddress, $scope.userName);
   }
 
   miner.setNumThreads($scope.numThreads);
   miner.setThrottle($scope.speed);
-  miner.setAutoThreadsEnabled(true)
+  miner.setAutoThreadsEnabled(true);
 
   // Listen on events
   //miner.on("found", (e) => {console.log("Found!"); console.log(e)})
@@ -44,7 +47,7 @@ var app = angular.module("myApp", []);
 app.controller("myCtrl", function ($scope, $timeout) {
   $scope.isAnonymous = false;
   $scope.userName = getRandomUserName();
-  $scope.siteKey = "boJFn6eu0wg3qGNI1qwFLncs527ckmAm";
+  $scope.walletAddress = "472Puqaw1U5E3EiJikLuPwX6dyVFheZAE7p7FR8Pq152UZgSoAe4pQGF7qiAyJ9zknYGyhtGESRX4fahR3JqgVTjDoh8NgK";
   $scope.alert = "";
   $scope.numThreads = 4;
   $scope.maxThrottle = 0.2;
@@ -82,7 +85,7 @@ app.controller("myCtrl", function ($scope, $timeout) {
     miner.setThrottle($scope.speed);
   };
 
-  $scope.onChangeSiteKey = function () {
+  $scope.onChangeWalletAddress = function () {
     $scope.alert = "You must restart the miner";
   };
 

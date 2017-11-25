@@ -44,8 +44,8 @@
 
             <div class="form-group row">
                 <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1">Public Site Key</span>
-                    <input type="text" class="form-control" placeholder="site-key" aria-label="site-key" aria-describedby="basic-addon1" ng-model="siteKey" ng-change="onChangeSiteKey()" required>
+                    <span class="input-group-addon" id="basic-addon1">Wallet Address</span>
+                    <input type="text" class="form-control" placeholder="wallet-address" aria-label="wallet-address" aria-describedby="basic-addon1" ng-model="walletAddress" ng-change="onChangeWalletAddress()" required>
                     <span class="input-group-btn"><button class="btn btn-secondary" type="button" ng-click="restart()">Restart</button></span>
                 </div>
             </div>
@@ -54,10 +54,10 @@
                 <div class="input-group">
                     <span class="input-group-addon">Check for Anonymous</span>
                     <span class="input-group-addon">
-						<input type="checkbox" aria-label="Check for Anonymous" ng-model="isAnonymous" ng-change="onChangeSiteKey()">
+						<input type="checkbox" aria-label="Check for Anonymous" ng-model="isAnonymous" ng-change="onChangeWalletAddress()">
 					</span>
 
-                    <input type="text" class="form-control" aria-label="Miner Name" ng-model="userName" ng-disabled="isAnonymous" ng-change="onChangeSiteKey()">
+                    <input type="text" class="form-control" aria-label="Miner Name" ng-model="userName" ng-disabled="isAnonymous" ng-change="onChangeWalletAddress()">
                 </div>
             </div>
 
@@ -119,6 +119,7 @@
             <div>
                 <a href="https://www.coingecko.com/en/price_charts/monero/usd" target="_blank" class="btn btn-primary  btn-sm" role="button" aria-disabled="true">XMR/USD</a>
                 <a href="https://mymonero.com/#/" target="_blank" class="btn btn-primary  btn-sm" role="button" aria-disabled="true">Monero Online Wallet</a>
+                <a href="https://supportxmr.com/#/" target="_blank" class="btn btn-primary  btn-sm" role="button" aria-disabled="true">Monero Mining Pool</a>
             </div>
         </div>
     </div>
