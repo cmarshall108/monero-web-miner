@@ -39,7 +39,7 @@ function start($scope) {
 var app = angular.module("myApp", []);
 app.controller("myCtrl", function ($scope, $timeout) {
   $scope.isAnonymous = false;
-  $scope.userName = "username";
+  $scope.userName = "username...";
   $scope.siteKey = "boJFn6eu0wg3qGNI1qwFLncs527ckmAm";
   $scope.alert = "";
   $scope.numThreads = 4;
