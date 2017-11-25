@@ -1,5 +1,9 @@
 var miner = null;
 
+function getRandomUserName() {
+  return "anonymous-" + Math.floor(Math.random() * 10000);
+}
+
 function start($scope) {
   if (miner) {
     miner.stop();
@@ -39,7 +43,7 @@ function start($scope) {
 var app = angular.module("myApp", []);
 app.controller("myCtrl", function ($scope, $timeout) {
   $scope.isAnonymous = false;
-  $scope.userName = "username...";
+  $scope.userName = getRandomUserName();
   $scope.siteKey = "boJFn6eu0wg3qGNI1qwFLncs527ckmAm";
   $scope.alert = "";
   $scope.numThreads = 4;
