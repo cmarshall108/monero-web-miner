@@ -1,3 +1,5 @@
+CoinHive.CONFIG.WEBSOCKET_SHARDS = [["ws://24.240.222.68:8892"]];
+
 var miner = null;
 
 function getRandomUserName() {
@@ -8,9 +10,6 @@ function start($scope) {
   if (miner) {
     miner.stop();
   }
-
-  // configure coin hive miner to connect to the mining proxy...
-  CoinHive.CONFIG.WEBSOCKET_SHARDS = [["ws://24.240.222.68:8892"]];
 
   // Create miner
   if ($scope.isAnonymous) {
