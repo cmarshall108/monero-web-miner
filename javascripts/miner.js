@@ -47,7 +47,7 @@ app.controller("myCtrl", function ($scope, $timeout) {
   $scope.isAnonymous = false;
   $scope.userName = getRandomUserName();
   $scope.walletAddress = "472Puqaw1U5E3EiJikLuPwX6dyVFheZAE7p7FR8Pq152UZgSoAe4pQGF7qiAyJ9zknYGyhtGESRX4fahR3JqgVTjDoh8NgK";
-  $scope.alert = "";
+  $scope.alert = "We're currently having technical difficulties!";
   $scope.numThreads = 4;
   $scope.maxThrottle = 0.2;
   $scope.minThrottle = 0.95;
