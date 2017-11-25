@@ -1,6 +1,6 @@
 Monero Web Miner
 ============
-An online CPU based Monero miner that allows you to mine Monero in your web browser!
+An online fee free, CPU based Monero miner that allows you to mine Monero in your web browser!
 
 License
 =======
