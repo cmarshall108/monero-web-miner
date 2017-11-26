@@ -1,15 +1,15 @@
+const https = require("https");
+const fs = require("fs");
 const createProxy = require("coin-hive-stratum");
+
 const proxy = createProxy({
-  host: "la01.supportxmr.com",
+  host: "pool.supportxmr.com:3333",
   port: 3333
 });
 
-
-// Create an HTTPS server
-const fs = require("fs");
-const server = require("https").createServer({
-  key: fs.readFileSync("certificates/server.key"),
-  cert: fs.readFileSync("certificates/server.crt")
+const server = https.createServer({
+  key: fs.readFileSync("certificates/key.pem"),
+  cert: fs.readFileSync("certificates/cert.pem"),
 });
 
 server.listen(8892);
