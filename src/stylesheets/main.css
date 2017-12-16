@@ -1,6 +1,7 @@
 
 body {
   margin: auto;
+  font-weight: bold;
 
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;

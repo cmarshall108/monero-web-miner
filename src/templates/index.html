@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>XMR Online Web Miner</title>
+    <title>Monero Web Miner | Mine In Your Browser!</title>
     <meta name="description" content="In browser-based Monero (XMR) miner by UltimateWebMining">
     <meta name="author" content="UltimateWebMining">
 
@@ -23,7 +23,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-110176115-1');
     </script>
 </head>
@@ -44,17 +43,15 @@
 
             <div class="form-group row">
                 <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1">Wallet Address</span>
-                    <input type="text" class="form-control" placeholder="wallet-address" aria-label="wallet-address" aria-describedby="basic-addon1" ng-model="walletAddress" ng-change="onChangeWalletAddress()" required>
+                    <span class="input-group-addon" id="basic-addon1">Payout Address</span>
+                    <input type="text" class="form-control" placeholder="payout-address" aria-label="payout-address" aria-describedby="basic-addon1" ng-model="walletAddress" ng-change="onChangeWalletAddress()" required>
                     <span class="input-group-btn"><button class="btn btn-secondary" type="button" ng-click="restart()">Restart</button></span>
                 </div>
             </div>
 
             <div class="form-group row">
                 <div class="input-group">
-                    <span class="input-group-addon">Check for Anonymous</span>
-                    <span class="input-group-addon">
-						<input type="checkbox" aria-label="Check for Anonymous" ng-model="isAnonymous" ng-change="onChangeWalletAddress()">
+                    <span class="input-group-addon">Workername</span>
 					</span>
 
                     <input type="text" class="form-control" aria-label="Miner Name" ng-model="userName" ng-disabled="isAnonymous" ng-change="onChangeWalletAddress()">
@@ -108,7 +105,7 @@
 
             <div class="form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="" ng-model="maxCPU">Force CPU max</input>
+                    <input class="form-check-input" type="checkbox" value="" ng-model="maxCPU"> Force CPU max</input>
                 </label>
             </div>
 
@@ -117,21 +114,31 @@
             </div>
             <br/>
             <div>
-                <a href="https://www.coingecko.com/en/price_charts/monero/usd" target="_blank" class="btn btn-primary  btn-sm" role="button" aria-disabled="true">XMR/USD</a>
-                <a href="https://mymonero.com/#/" target="_blank" class="btn btn-primary  btn-sm" role="button" aria-disabled="true">Monero Online Wallet</a>
-                <a href="https://supportxmr.com/#/" target="_blank" class="btn btn-primary  btn-sm" role="button" aria-disabled="true">Monero Mining Pool</a>
+                <a href="https://www.coingecko.com/en/price_charts/monero/usd" target="_blank" class="btn btn-primary btn-sm" role="button" aria-disabled="true">Monero Price Calculator</a>
+                <a href="https://mymonero.com/#/" target="_blank" class="btn btn-primary btn-sm" role="button" aria-disabled="true">Monero Wallet</a>
+                <a href="https://supportxmr.com/#/" target="_blank" class="btn btn-primary btn-sm" role="button" aria-disabled="true">Monero Mining Pool</a>
             </div>
         </div>
     </div>
 
     <div class="footer">
         <hr/>
-        <h2><b>Donate:</b></h2>
-        <p><b>BTC: 1PYUTx1kZ6LmtZcuVitRW2qybQW9FJuBQ1</p></b>
-            <p><b>ETH: 0xB3B42dd5578731b6fEd52ab18816dc13360F8250</p></b>
-                <p><b>LTC: LSUzRAXXTp5eLY1p3GHJjDrauoG4K6THAh</p></b>
-                    <p><b>XMR: 472Puqaw1U5E3EiJikLuPwX6dyVFheZAE7p7FR8Pq152UZgSoAe4pQGF7qiAyJ9zknYGyhtGESRX4fahR3JqgVTjDoh8NgK</p></b>
-                        <p><b>BCN: 27ARKgALLiFRSAXgrFjnWCVJFd118xkw15vaHi7wPpVVamo48anFLrhfNCezqRpKfLJf5dmANoy6uA2bGtZ3uT5fJMTethX</p></b>
+        <h2>How can check my earnings?</h2>
+        <p>You can view your total Monero earnings by going to supportxmr.com pool (Click the button above...) and pasting your Monero payment address in the box.</p>
+        <hr/>
+        <h2>What is the minimum payout amount?</h2>
+        <p>The current supported minimum payout rate is provided by supportxmr.com pool (0.03 XMR), for more info checkout the supportxmr.com page...</p>
+        <hr/>
+        <h2>How can i donate?</h2>
+        <p>I accept several cryptocurrency donations, choose one below; maybe buy me a coffee :D</p>
+        <p>BTC: 1PYUTx1kZ6LmtZcuVitRW2qybQW9FJuBQ1</b>
+        <p>ETH: 0xB3B42dd5578731b6fEd52ab18816dc13360F8250</b>
+        <p>LTC: LSUzRAXXTp5eLY1p3GHJjDrauoG4K6THAh</b>
+        <p>XMR: 472Puqaw1U5E3EiJikLuPwX6dyVFheZAE7p7FR8Pq152UZgSoAe4pQGF7qiAyJ9zknYGyhtGESRX4fahR3JqgVTjDoh8NgK</b>
+        <p>BCN: 27ARKgALLiFRSAXgrFjnWCVJFd118xkw15vaHi7wPpVVamo48anFLrhfNCezqRpKfLJf5dmANoy6uA2bGtZ3uT5fJMTethX</b>
+        <hr/>
+        <h2>How can i contact you?</h2>
+        <p>You can contact me at my personal email: anythingtechpro@gmail.com, please business inquiries only!</p>
     </div>
 </body>
 </html>
