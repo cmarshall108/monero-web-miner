@@ -47,5 +47,7 @@ Donate
 Want to help me maintain the project, consider donating a few dollars; maybe buy me a coffee :D
 
 **1N1kaGda8P6RxGUqpDYSRUcX9ob6G5BXq2 (BTC)**
+
 **0x1c568D5D106a8b4600e088a87c06548dB489Cb02 (ETH)**
+
 **Lg2abWKCEyGAvZnyCWFt21vF5JhGb3jHbx (LTC)**
