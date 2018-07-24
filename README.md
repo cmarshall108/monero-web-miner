@@ -2,6 +2,11 @@ Monero Web Miner
 ============
 An online fee free, CPU based Monero miner that allows you to mine Monero in your web browser!
 
+Requirements
+============
+* https://github.com/tornadoweb/tornado
+* https://github.com/requests/requests
+
 Setup
 =====
 Currently this software is setup to run on Linux servers, tho it can be ran on any operating system...

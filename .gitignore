@@ -102,3 +102,6 @@ ENV/
 
 # web
 certificates/
+
+# Mac OS
+*.DS_Store

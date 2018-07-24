@@ -1,7 +1,10 @@
 import os
+import sys
 import tornado
 import tornado.web
+
 from tornado.options import define, options
+
 
 class Application(tornado.web.Application):
 
@@ -32,5 +35,7 @@ def main():
 
     tornado.ioloop.IOLoop.current().start()
 
+    return 0
+
 if __name__ == '__main__':
-    main()
+    sys.exit(main())
